@@ -1,0 +1,58 @@
+name: attendance_manager_app
+description: A Flutter application for managing attendance for DepEd.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.17.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.0.6
+  sqflite: ^2.0.0+4
+  sqflite_common_ffi: ^2.0.0+1
+  timezone: ^0.10.0
+  fl_chart: ^0.70.2
+  intl: ^0.20.2
+  pdf: ^3.11.0
+  printing: ^5.13.3
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  flutter_web_plugins:
+    sdk: flutter
+  permission_handler: ^11.2.1
+  awesome_notifications: ^0.10.1  # Add this line for the new notification package
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # For generating Hive adapters
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.11
+
+  # For linting and code analysis
+  flutter_lints: ^5.0.0
+
+flutter:
+  # Enable material design
+  uses-material-design: true
+
+  # Assets (if you plan to add images, fonts, etc.)
+  assets:
+    - assets/namoc.png
+    - assets/mulit.png
+  
+
+  # Fonts (optional, uncomment and configure if needed)
+  # fonts:
+  #   - family: CustomFont
+  #     fonts:
+  #       - asset: assets/fonts/CustomFont-Regular.ttf
+  #       - asset: assets/fonts/CustomFont-Bold.ttf
+  #         weight: 700
